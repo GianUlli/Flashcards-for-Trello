@@ -27,8 +27,8 @@
 
 	<CheckBoxPreference
 			android:key="enable_mathml"
-			android:title="Enable MathML"
-			android:summary="Enables MathML to display formulas. This may slow down the app."
+			android:title="@string/enable_mathml"
+			android:summary="@string/enable_mathml_desc"
 			android:defaultValue="false"/>
 
 	<Preference

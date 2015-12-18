@@ -1,0 +1,51 @@
+<!--
+  ~    Copyright 2015 Gian Ulli
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<resources>
+	<string name="app_name">Flashcards for Trello</string>
+	<string name="title_activity_main">Flashcards</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Einstellungen</string>
+	<string name="error">Fehler</string>
+	<string name="trello_not_accessible">Trello ist momentan nicht erreichbar. Bitte stelle sicher, dass du mit dem Internet verbunden bist.</string>
+	<string name="you_have_no_boards">Du hast noch keine Boards.</string>
+	<string name="board_contains_no_lists">Dieses Board enthält keine Listen.</string>
+	<string name="some_cards">%1$d Karten</string>
+	<string name="one_card">1 Karte</string>
+	<string name="no_cards">No Karten</string>
+	<string name="hide_boards">Verstecke Boards</string>
+	<string name="select_uc">Wähle</string>
+	<string name="cards">Karten</string>
+	<string name="start_session">Session starten</string>
+	<string name="settings">Einstellungen</string>
+	<string name="refresh">Aktualisieren</string>
+	<string name="title_activity_session">SessionActivity</string>
+	<string name="page_indicator_text">%1$d / %2$d</string>
+	<string name="wrong">Falsch</string>
+	<string name="correct">Richtig</string>
+	<string name="session_finished">Du hast diese Session beendet! Du hast %1$d von %2$d Karten richtig beantwortet.</string>
+	<string name="ok">OK</string>
+	<string name="set_font_size">Schriftgrösse ändern</string>
+	<string name="reset_hidden_boards_are_you_sure">Versteckte Boards zurücksetzen?</string>
+	<string name="reset">Zurücksetzen</string>
+	<string name="cancel">Abbrechen</string>
+	<string name="set_font_size_desc">Bestimme die Schriftgrösse der Karten</string>
+	<string name="reset_hidden_boards">Versteckte Boards zurücksetzen</string>
+	<string name="move_correct_cards">Verschiebe korrekte Karten nach</string>
+	<string name="move_wrong_cards">Verschiebe falsche Karten nach</string>
+	<string name="enable_mathml">Aktiviere MathML</string>
+	<string name="enable_mathml_desc">Aktiviert MathML um Formeln anzuzeigen. Kann die App verlangsamen.</string>
+</resources>

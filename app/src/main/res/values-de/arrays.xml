@@ -17,39 +17,8 @@
 
 <resources>
 	<string-array name="card_selection_modes">
-		<item>at random</item>
-		<item>from top</item>
-		<item>from bottom</item>
-	</string-array>
-
-	<string-array name="card_amount" translatable="false">
-		<item>5</item>
-		<item>10</item>
-		<item>15</item>
-		<item>20</item>
-		<item>30</item>
-		<item>50</item>
-		<item>100</item>
-		<item>150</item>
-		<item>200</item>
-		<item>300</item>
-		<item>500</item>
-	</string-array>
-
-	<string-array name="font_sizes" translatable="false">
-		<item>12</item>
-		<item>14</item>
-		<item>16</item>
-		<item>18</item>
-		<item>20</item>
-		<item>22</item>
-		<item>24</item>
-		<item>26</item>
-		<item>28</item>
-		<item>30</item>
-		<item>32</item>
-		<item>34</item>
-		<item>36</item>
-		<item>38</item>
+		<item>zufällig</item>
+		<item>von oben</item>
+		<item>von unten</item>
 	</string-array>
 </resources>

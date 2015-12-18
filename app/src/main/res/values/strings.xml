@@ -21,7 +21,7 @@
 	<string name="action_settings">Settings</string>
 	<string name="error">Error</string>
 	<string name="trello_not_accessible">Trello is currently not accessible. Please make sure that your are connected to the internet.</string>
-	<string name="you_have_no_boards">You have no lists.</string>
+	<string name="you_have_no_boards">You have no boards.</string>
 	<string name="board_contains_no_lists">This board contains no lists.</string>
 	<string name="some_cards">%1$d cards</string>
 	<string name="one_card">1 card</string>
@@ -46,4 +46,6 @@
 	<string name="reset_hidden_boards">Reset hidden boards</string>
 	<string name="move_correct_cards">Move correct cards to</string>
 	<string name="move_wrong_cards">Move wrong cards to</string>
+	<string name="enable_mathml">Enable MathML</string>
+	<string name="enable_mathml_desc">Enables MathML to display formulas. This may slow down the app.</string>
 </resources>
