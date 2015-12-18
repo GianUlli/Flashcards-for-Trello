@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~    Copyright 2015 Gian Ulli
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<android.support.v7.widget.CardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="8dp"
+		app:cardElevation="2dp"
+		app:cardBackgroundColor="@android:color/white">
+
+	<FrameLayout
+			android:id="@+id/container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/card_background">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:paddingLeft="12dp"
+					android:paddingRight="12dp">
+
+				<TextView
+						android:id="@android:id/text1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:textColor="?android:textColorPrimary"/>
+
+				<TextView
+						android:id="@android:id/text2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="14sp"
+						android:textColor="?android:textColorSecondary"/>
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/session_layout"
+					android:clickable="true"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone">
+
+				<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="?android:listDivider"/>
+
+				<LinearLayout
+						android:id="@+id/amount_settings_layout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:paddingTop="4dp"
+						android:paddingLeft="12dp"
+						android:paddingRight="12dp"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:textSize="14sp"
+							android:textColor="?android:textColorSecondary"
+							android:text="@string/select_uc"
+							android:layout_marginRight="3dp"
+							android:gravity="center_vertical"/>
+
+					<Spinner
+							android:id="@+id/card_amount_spinner"
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:spinnerMode="dropdown"
+							android:layout_marginRight="3dp"/>
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:textSize="14sp"
+							android:textColor="?android:textColorSecondary"
+							android:text="@string/cards"
+							android:layout_marginRight="3dp"
+							android:gravity="center_vertical"/>
+
+					<Spinner
+							android:id="@+id/card_selection_mode_spinner"
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:spinnerMode="dropdown"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:id="@+id/correct_card_settings_layout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:paddingTop="4dp"
+						android:paddingLeft="12dp"
+						android:paddingRight="12dp"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:textSize="14sp"
+							android:textColor="?android:textColorSecondary"
+							android:text="@string/move_correct_cards"
+							android:layout_marginRight="3dp"
+							android:gravity="center_vertical"/>
+
+					<Spinner
+							android:id="@+id/correct_card_list_spinner"
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:spinnerMode="dropdown"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+						android:id="@+id/wrong_card_settings_layout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:paddingTop="4dp"
+						android:paddingLeft="12dp"
+						android:paddingRight="12dp"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:textSize="14sp"
+							android:textColor="?android:textColorSecondary"
+							android:text="@string/move_wrong_cards"
+							android:layout_marginRight="3dp"
+							android:gravity="center_vertical"/>
+
+					<Spinner
+							android:id="@+id/wrong_card_list_spinner"
+							android:layout_width="wrap_content"
+							android:layout_height="36dp"
+							android:spinnerMode="dropdown"/>
+
+				</LinearLayout>
+
+				<Button
+						android:id="@+id/start_session_button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/start_session"
+						android:textAllCaps="true"
+						android:textColor="@color/accent"
+						style="?android:attr/borderlessButtonStyle"
+						android:layout_margin="0dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</FrameLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~    Copyright 2015 Gian Ulli
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<resources>
+	<!-- Color palette is using color values from
+		 http://www.google.com/design/spec/style/color.html#color-color-palette -->
+	<color name="primary">#2196F3</color>	<!-- Blue 500 -->
+	<color name="primary_dark">#1976D2</color>	<!-- Blue 700 -->
+	<color name="primary_light">#90CAF9</color>	<!-- Blue 200 -->
+	<color name="window_background">#FFFFFF</color>
+	<color name="accent">#FF9800</color>	<!-- Orange 500 -->
+	<color name="accent_dark">#F57C00</color>	<!-- Orange 700 -->
+	<color name="accent_light">#FFCC80</color>	<!-- Orange 200 -->
+
+	<color name="neutral_background">#E2E4E6</color>
+
+	<color name="text_disabled">#43000000</color> <!-- 26% black -->
+
+	<color name="list_selector_background_selected">#66000000</color> <!-- 40% black -->
+
+	<!-- needed for "swipe to refresh" - colors will appear in this order -->
+	<color name="color1">#FF9800</color>	<!-- Orange 500 -->
+	<color name="color2">#F57C00</color>	<!-- Orange 700 -->
+	<color name="color3">#FFCC80</color>	<!-- Orange 200 -->
+
+	<color name="circular_button_grey_pressed">#66999999</color>	<!-- 40% #999999 -->
+
+	<color name="red">#F44336</color>	<!-- Red 500 -->
+	<color name="green">#4CAF50</color>	<!-- Green 500 -->
+
+	<color name="accent_26">#42FF9800</color>	<!-- 12% Orange 500 -->
+</resources>
