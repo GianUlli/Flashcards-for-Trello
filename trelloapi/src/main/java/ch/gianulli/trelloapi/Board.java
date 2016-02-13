@@ -98,11 +98,19 @@ public class Board implements Parcelable {
 
 				for (int i = 0; i < array.length(); ++i) {
 					JSONObject board = array.getJSONObject(i);
-					result.add(new Board(board.getString("id"), board.getString("name"), board
-							.getJSONObject("prefs").getString("backgroundColor")));
+
+					// We only have a color
+					if (board.getJSONObject("prefs").getString("backgroundImage").equals("null")) {
+						result.add(new Board(board.getString("id"), board.getString("name"), board
+								.getJSONObject("prefs").getString("backgroundColor")));
+					} else { // background image --> use standard color
+						result.add(new Board(board.getString("id"), board.getString("name"),
+								STANDARD_COLOR));
+					}
 				}
 			}
 		} catch (JSONException e) {
+			e.printStackTrace();
 			throw new TrelloNotAccessibleException("Server answer was not correctly formatted.");
 		}
 
