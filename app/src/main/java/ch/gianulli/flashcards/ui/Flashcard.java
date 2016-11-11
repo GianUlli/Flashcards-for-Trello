@@ -99,7 +99,13 @@ public class Flashcard {
 
 		public final static int FINGER_UNDEFINED = 3;
 
+		private final static float NOT_DRAGGING_CONSTANT = 5.0f; // dp
+
 		private int fingerState = FINGER_RELEASED;
+
+		private float initialX = 0;
+
+		private float initialY = 0;
 
 
 		@Override
@@ -110,23 +116,37 @@ public class Flashcard {
 				case MotionEvent.ACTION_DOWN:
 					if (fingerState == FINGER_RELEASED) {
 						fingerState = FINGER_TOUCHED;
+						initialX = motionEvent.getX();
+						initialY = motionEvent.getY();
 					} else {
 						fingerState = FINGER_UNDEFINED;
 					}
 					break;
 
 				case MotionEvent.ACTION_UP:
-					if (fingerState != FINGER_DRAGGING) {
+					if (fingerState == FINGER_TOUCHED) {
 						fingerState = FINGER_RELEASED;
 
 						turnCard();
 
 						return true;
-
 					} else if (fingerState == FINGER_DRAGGING) {
 						fingerState = FINGER_RELEASED;
+
+						// Drag was very short --> it wasn't a drag?? A bit of a workaround...
+						float dx = initialX - motionEvent.getX();
+						float dy = initialY - motionEvent.getY();
+
+						float maxDraggingDist = TypedValue.applyDimension(TypedValue
+								.COMPLEX_UNIT_DIP, NOT_DRAGGING_CONSTANT, view.getResources()
+								.getDisplayMetrics());
+
+						if (dx * dx + dy * dy < maxDraggingDist * maxDraggingDist) {
+							turnCard();
+							return true;
+						}
 					} else {
-						fingerState = FINGER_UNDEFINED;
+						fingerState = FINGER_RELEASED;
 					}
 					break;
 
@@ -157,6 +177,7 @@ public class Flashcard {
 	/**
 	 * @param view Instance of flashcard.xml
 	 */
+	@SuppressWarnings("ResourceType")
 	public Flashcard(View view, OnCardAnsweredListener listener) {
 		mListener = listener;
 
